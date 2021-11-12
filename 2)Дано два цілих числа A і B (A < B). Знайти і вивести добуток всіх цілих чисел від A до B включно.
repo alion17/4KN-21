@@ -1,18 +1,21 @@
 #include <stdio.h>
+
 int main(void)
 {
-   int a,b;
-   printf("A:");
-   scanf ("%i", &a);
- 
-   printf("B:");
-   scanf ("%i", &b);
- 
-   int i, sum=0;
-    for  (i =a; i<=b; ++i)
-      sum +=i;
- 
-    printf("Sum = %i \n ",sum);
- 
-    return 0;
+    int k = 1;
+    int A = 0;
+    int B = 0;
+    printf("Введіть число A: ");
+    scanf("%i", &A);
+    do
+    {
+     printf("Введіть число B: ");
+     scanf("%i", &B);
+    } while(A > B);
+
+    for (int i = A; i <= B; i++)
+    {
+        k *= i;
+    }
+    printf("%i", k);
 }
