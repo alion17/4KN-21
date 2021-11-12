@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void)
+{
+   int a,b;
+   printf("A:");
+   scanf ("%i", &a);
+ 
+   printf("B:");
+   scanf ("%i", &b);
+ 
+   int i, sum=0;
+    for  (i =a; i<=b; ++i)
+      sum +=i;
+ 
+    printf("Sum = %i \n ",sum);
+ 
+    return 0;
+}
